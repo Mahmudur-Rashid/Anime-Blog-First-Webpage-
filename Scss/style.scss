@@ -1,0 +1,214 @@
+// extra stuff
+
+@import "reset";
+@import "variables";
+
+/* Header */
+header {
+  text: {
+    shadow: 2px 4px 2px black;
+    align: center;
+  }
+  font-size: 2em;
+  color: $textColor;
+  background: {
+    image: url(../Pics/Death_Note.png);
+    repeat: no-repeat;
+    attachment: fixed;
+    position: center;
+    size: cover;
+  }
+}
+
+.header-opacity {
+  background-color: rgba(00, 00, 00, 0.3);
+  padding: 1.6em 0;
+}
+
+/* navigation */
+
+.navigation {
+  background-color: $secondBgColor;
+  position: sticky;
+  top: 0;
+
+  ul {
+    list-style-type: none;
+    background-color: $thirdBgColor;
+    display: none;
+    z-index: 2;
+    li {
+      display: block;
+
+      a {
+        text: {
+          decoration: none;
+          transform: uppercase;
+          align: center;
+        }
+
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        display: block;
+        padding: 24px;
+        color: $thirdColor;
+
+        &.active {
+          color: $textColor;
+          background-color: $secondColor;
+        }
+
+        &:hover:not(.active) {
+          color: $textColor;
+          background-color: $secondColor;
+          transition: $basicTransition;
+        }
+      } //lists links
+    } //lists
+  } //ul
+} //.navigation
+
+/* navigation burger button */
+
+#menu-toggle-button {
+  display: block;
+}
+.fa-bars {
+  background-color: $secondBgColor;
+  color: $mainColor;
+  cursor: pointer;
+  padding: 1em;
+  &:hover {
+    transition: $basicTransition;
+    background-color: $secondColor;
+    color: $textColor;
+  }
+}
+
+/* body */
+
+body {
+  background-color: $mainBgColor;
+  font-family: Oxanium, Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+// all big texts
+big {
+  color: $mainColor;
+}
+
+//for all the horizontal lines
+
+hr {
+  max-width: 750px;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  color: $mainColor;
+}
+
+.back-to-top {
+  i {
+    padding: 16px;
+    color: $secondColor;
+    text-decoration: none;
+    &:hover {
+      transition: $basicTransition;
+      color: $mainColor;
+    }
+  }
+}
+
+/* article style */
+main {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.article_picture {
+  width: 100%;
+  margin: 1.8em 0;
+  border-radius: 5%;
+}
+
+section {
+  line-height: 1.6em;
+  padding: 0.8em;
+  text-align: justify;
+  color: $textColor;
+
+  h2 {
+    color: $thirdColor;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 2em;
+  }
+
+  h1 {
+    color: $mainColor;
+    font-size: 2em;
+    padding: 1em 0;
+    line-height: 1.3em;
+  }
+}
+
+/* footer style */
+
+footer {
+  padding: 3em auto;
+  width: 100%;
+  background-color: rgb(90, 90, 90);
+  color: $textColor;
+  text-align: center;
+}
+
+/* social media icons */
+
+.social-media {
+  padding: 1.2em;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline;
+
+      a {
+        padding: 0.6em 1em;
+        color: $textColor;
+        font-size: 2.3em;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $mainColor;
+        } //hover
+      } //a
+    } //li
+  } //ul
+} //.social media
+
+/* Contact page form */
+
+form {
+  text-align: center;
+}
+.container {
+  margin: 50px 25px;
+  background-color: $mainBgColor;
+  color: $mainColor;
+  text-transform: uppercase;
+}
+span input,
+textarea {
+  font-family: Oxanium;
+  background-color: $textColor;
+  padding: 0.6em;
+  margin: 0.3em 0;
+  width: 100%;
+}
+.submit-button {
+  color: $textColor;
+  font-size: 1em;
+  font-weight: 800;
+  background-color: $secondColor;
+}

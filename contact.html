@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags/SEO Material -->
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts, stylesheet -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+
+    <nav class="navigation">
+      <span id="menu-toggle-button">
+        <i class="fa fa-bars button"></i>
+      </span>
+
+      <ul class="slideup-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Content -->
+    <main>
+      <div class="container">
+        <form action="">
+          <h1>Contact us</h1>
+
+          <span>
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <textarea
+              name="email"
+              id="text"
+              cols="30"
+              rows="10"
+              placeholder="Write your message"
+            ></textarea>
+            <input class="submit-button" type="submit" value="SUBMIT" />
+          </span>
+        </form>
+      </div>
+    </main>
+    <!-- Footer -->
+
+    <footer>
+      <span class="social-media">
+        <p
+          style="
+            font-weight: 800;
+            font-size: 1.2em;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            padding-top: 0.5em;
+            color: rgb(0, 182, 0);
+          "
+        >
+          Follow us on
+        </p>
+        <hr style="margin-top: 2em" />
+        <ul>
+          <li>
+            <a href="https://www.facebook.com"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </span>
+      <p>&copy;Copyright2020:Created by Mahmudur Rashid</p>
+    </footer>
+
+    <!-- Script -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#menu-toggle-button").click(function () {
+          $(".slideup-menu").slideToggle("fast", function () {});
+        });
+      });
+    </script>
+  </body>
+</html>
